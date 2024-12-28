@@ -1,34 +1,56 @@
 .team-container {
-    padding: 2rem;
-    text-align: center;
-    background: #020021; 
-    color: #ffffff;
-  }
-  
-  .team-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-  }
-  
-  .team-photo img {
-    max-width: 100%;
-    height: auto;
+  text-align: center;
+  background-color: #020021;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  height: 722px;
+  padding: 30px 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
 
-    margin-bottom: 2rem;
-  }
+.team-title {
+  display: flex;
+  width: 634px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.80);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 62.4px */
+  margin-bottom: 20px;
+}
+
+.team-photo img {
+  width: 80%;
+  border-radius: 10px;
+  flex-shrink: 0;
+  margin-bottom: 20px;
   
-  .team-members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-  
-  .team-members span {
-    flex: 1 1 150px; /* Flex layout for equal spacing */
-    text-align: center;
-  }
-  
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Two rows with three names per row */
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.team-members p {
+  margin: 0;
+  padding: 5px 15px;
+  background-color: #333;
+  border-radius: 5px;
+  font-size: 1em;
+  text-align: center;
+}

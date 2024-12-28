@@ -6,10 +6,11 @@ import { FeaturesComponent } from './features/features.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { TeamComponent } from './team/team.component';
 import { FooterComponent } from './footer/footer.component';
+import { LaunchingSsonPageComponent } from './launching-sson-page/launching-sson-page.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, HeroStackComponent, FeaturesComponent, PricingComponent, TeamComponent, FooterComponent],
+  imports: [RouterOutlet, NavbarComponent, HeroStackComponent, FeaturesComponent, PricingComponent, TeamComponent, FooterComponent, LaunchingSsonPageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -1,105 +1,220 @@
 .features-container {
-    padding: 2rem;
-    color: #ffffff;
-    background: #020021;
-    text-align: center;
-    display: flex;
-    padding: 40px 60px;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-  
-  .features-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .features-description {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .features-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-  }
-  
-  .feature-card {
-    background: #1a1a50;
-    border-radius: 8px;
-    padding: 1.5rem;
-    max-width: 300px;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .feature-card .icon {
-    height: 50px;
-    width: 50px;
-    margin-bottom: 1rem;
-  }
-  
-  /* .logmar-icon {
-    background: url('Icons/logMar Icon.png') no-repeat center;
-    background-size: contain;
-  }
-  
-  .gaze-tracking-icon {
-    background: url('Icons/Gaze Tracking Icon.png') no-repeat center;
-    background-size: contain;
-  }
-  
-  .games-icon {
-    background: url('Icons/Games Icon.png') no-repeat center;
-    background-size: contain;
-  } */
-  
-  .feature-card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .feature-card p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  .cta-link {
-    display: inline-block;
-    margin-top: 1rem;
-    color: #4a90e2;
-    text-decoration: none;
-  }
-  
-  .analytics-section {
-    margin-top: 3rem;
-    padding: 2rem;
-    background: #111144;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .analytics-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-  
-  .analytics-section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
-  
-  .cta-button {
-    padding: 0.8rem 2rem;
-    background: #4a90e2;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
+  padding: 2rem;
+  color: #ffffff;
+  background: #020021;
+  text-align: center;
+  display: flex;
+  padding: 40px 60px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* .smoke-effect {
+  width: 259px;
+  height: 189.5px;
+  flex-shrink: 0;
+  fill: linear-gradient(135deg, #2200FA 5.21%, #0034FF 85.94%);
+} */
+ 
+.features-title {
+  width: 762px;
+  height: 47px;
+  flex-shrink: 0;
+  color: #ECECEC;
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 48px */
+  letter-spacing: -0.16px;
+}
+
+.features-description {
+  width: 456px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #ECECEC;
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.feature-icons {
+  display: block; /* Ensures the image behaves as a block element */
+  margin: 0 auto 1rem; /* Centers the image and adds spacing below */
+  width: 50px; /* Adjust the size if needed */
+  height: 50px;
+}
+
+.feature-card {
+  background: #1a1a50;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 300px;
+  text-align: center; /* Ensures all content inside is centered */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 100%);
+  box-shadow: 0px -1px 5px 0px rgba(223, 224, 255, 0.30), 0px -1px 20px 0px rgba(155, 155, 255, 0.15), 0px 0.25px 0px 0px rgba(255, 255, 255, 0.50) inset;
+}
+
+.feature-card .icon {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+.feature-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  align-self: stretch;
+  color: #ECECEC;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 31.2px */
+  letter-spacing: -0.08px;
+
+}
+
+.feature-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  flex-shrink: 0;
+  align-self: stretch;
+  color: #ECECEC;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 19.5px */
+}
+
+.cta-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ECECEC;
+  /* text-decoration: none; */
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 19.5px */
+}
+
+.analytics-section {
+  margin-top: 3rem;
+  background: #111144;
+  border-radius: 8px;
+  text-align: center;
+
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 100%);
+  box-shadow: 0px -1px 5px 0px rgba(223, 224, 255, 0.30), 0px -1px 20px 0px rgba(155, 167, 255, 0.15), 0px 0.25px 0px 0px rgba(255, 255, 255, 0.50) inset;
+}
+
+.analytics-section h2 {
+  /* width: 762px;*/
+height: 60px; 
+  /* text-align: center;
+
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+
+height: 97px;
+width: 400px; */
+
+align-self: stretch;
+flex-shrink: 0;
+color: #ECECEC;
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+/* font-weight: 700; */
+line-height: 120%; /* 48px */
+letter-spacing: -0.16px;
+color: #ECECEC;
+
+text-align: center;
+font-size: 24px;
+font-style: normal;
+line-height: 120%; 
+}
+
+.analytics-section p {
+  margin-bottom: 1.5rem;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #ECECEC;
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.cta-button {
+  /* padding: 0.8rem 2rem; */
+  /* background: #4a90e2; */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 30px;
+  border: 0.5px solid #ECECEC;
+  color: #ECECEC;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 22.5px */
+}
+
+.cta-button:hover {
+  background: rgb(0, 15, 148);
+  color: #ffffff;
+}
