@@ -1,17 +1,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
-<nav class="navbar">
-    <img src="Images/Logo Words Only.png" class="logo" alt="Logo">
-    <ul class="nav-links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#aboutUs">About Us</a></li>
-        <li><a href="#contactUs" class="contact-us">Contact Us</a></li>
-        <li><a href="#goToApp" class="go-to-app">Go to app</a></li>
-    </ul>
-    <div class="burger">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</nav>
+<body>
+
+    <header [class.scrolled]="isScrolled">
+        <nav class="navbar fixed-top">
+            <img src="Images/Logo Words Only.png" class="logo" alt="Logo">
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#aboutUs">About Us</a></li>
+                <li><a href="#contactUs" class="contact-us">Contact Us</a></li>
+                <li><a href="#goToApp" class="go-to-app">Go to app</a></li>
+            </ul>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+</body>
