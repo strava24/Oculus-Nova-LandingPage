@@ -1,0 +1,97 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(to bottom, #0052cc, #002d70, #000d22, #000000);
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Logo Styling */
+  .logo-container {
+    margin-bottom: 20px;
+  }
+  .logo {
+    width: 250px;
+    height: auto;
+  }
+  
+  /* Title Styling */
+  .title {
+    font-size: 3rem;
+    margin: 10px 0;
+    font-weight: 600;
+    color: #e0e0e0;
+    text-align: center;
+    font-family: montserrat;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 96px */
+    letter-spacing: -2.88px;
+    background: linear-gradient(146deg, #ECECEC 20.35%, rgba(236, 236, 236, 0.00) 128.73%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 90px;
+    flex-shrink: 0;
+    align-self: stretch;
+  }
+  
+  /* Subtitle Styling */
+  .subtitle {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 600px;
+    color: #b0b0b0;
+    line-height: 1.5;
+  }
+  
+  /* Button Styling */
+  .button-container {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn.primary {
+    background: white;
+    color: #0052cc;
+  }
+  
+  .btn.primary:hover {
+    background: #e0e0e0;
+  }
+  
+  .btn.secondary {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  .btn.secondary:hover {
+    background: white;
+    color: #0052cc;
+  }
+  

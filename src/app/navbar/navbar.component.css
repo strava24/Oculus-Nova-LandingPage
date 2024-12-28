@@ -1,0 +1,77 @@
+.navbar {
+    /* border-radius: 10px; */
+    display: flex;
+    flex-shrink: 0;
+    background: #0B0121;
+    box-shadow: 200px 100px 80px 0px rgba(0, 0, 0, 0.15), 100px 100px 80px 0px rgba(0, 0, 0, 0.15), 64px 64.815px 46.852px 0px rgba(0, 0, 0, 0.10), 38px 38.519px 25.481px 0px rgba(0, 0, 0, 0.10), 20px 20px 13px 0px rgba(0, 0, 0, 0.08), 8px 8.148px 6.519px 0px rgba(0, 0, 0, 0.05), 2px 1.852px 3.148px 0px rgba(0, 0, 0, 0.04);
+}
+
+/* Basic Navbar Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+
+.logo {
+    height: 25px; /* Adjust height as needed */
+    width: auto;  /* Maintain aspect ratio */
+  }
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+}
+.burger {
+    display: none;
+}
