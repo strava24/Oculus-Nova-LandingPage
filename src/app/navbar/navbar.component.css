@@ -5,17 +5,10 @@
     padding: 0px 32px;
     justify-content: space-between; /* Space out logo and links */
     align-items: center; /* Vertically center content */
-    background-color: #003b88;
-    /* box-shadow: 200px 100px 80px 0px rgba(0, 0, 0, 0.15), 
-                100px 100px 80px 0px rgba(0, 0, 0, 0.15), 
-                64px 64.815px 46.852px 0px rgba(0, 0, 0, 0.10), 
-                38px 38.519px 25.481px 0px rgba(0, 0, 0, 0.10), 
-                20px 20px 13px 0px rgba(0, 0, 0, 0.08), 
-                8px 8.148px 6.519px 0px rgba(0, 0, 0, 0.05), 
-                2px 1.852px 3.148px 0px rgba(0, 0, 0, 0.04); */
+    background-color: #060012;
 }
 
-header.scrolled {
+/* header.scrolled {
     opacity: 0.8;
 }
 
@@ -24,8 +17,8 @@ header nav.navbar {
 }
 
 header.scrolled nav.navbar {
-    background-color: #0B0121; /* Change background color on scroll - Change this color if needed*/
-}
+    background-color: #0B0121;} /* Change background color on scroll */
+
 
 /* Logo Styling */
 .logo {
@@ -39,10 +32,10 @@ header.scrolled nav.navbar {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
+    transition: all 0.3s ease; /* Smooth transition for burger menu */
 }
 
 .nav-links li {
@@ -52,8 +45,6 @@ header.scrolled nav.navbar {
 .nav-links a {
     color: white;
     text-decoration: none;
-    /* font-size: 16px;
-    font-weight: 500; */
     padding: 8px 16px;
     transition: all 0.3s ease;
     font-family: Montserrat;
@@ -61,12 +52,7 @@ header.scrolled nav.navbar {
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 22.5px */
-    }
-
-/* .nav-links a.contact-us {
-    border: 1px solid white;
-    border-radius: 20px;
-} */
+}
 
 .nav-links a.go-to-app {
     background-color: white;
@@ -87,24 +73,54 @@ header.scrolled nav.navbar {
 
 /* Burger Icon Styling */
 .burger {
-    display: none; /* Hidden by default */
+    display: none; /* Hidden by default on large screens */
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Animations for the burger menu */
+.burger.active div:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active div:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Responsive Navbar */
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        display: flex;
         flex-direction: column;
-        background-color: #333;
+        background-color: #060012; /* Adjusted color */
         position: absolute;
-        top: 60px;
+        top: 80px;
         right: 0;
         width: 100%;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 1rem 0;
+        transform: translateY(-20px);
+        opacity: 0;
+        visibility: hidden; /* Make the dropdown hidden initially */
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        z-index: 1000;
     }
 
     .nav-links.active {
-        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible; /* Show the dropdown when active */
     }
 
     .burger {
@@ -112,10 +128,5 @@ header.scrolled nav.navbar {
         cursor: pointer;
     }
 
-    .burger div {
-        width: 25px;
-        height: 3px;
-        background-color: white;
-        margin: 5px;
-    }
+
 }

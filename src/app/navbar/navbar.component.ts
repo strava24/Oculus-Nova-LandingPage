@@ -9,17 +9,18 @@ import { Component, HostListener } from '@angular/core';
 export class NavbarComponent {
 
   isScrolled = false;
-  isNavOpen = false;
+  menuActive: boolean = false;
 
-  toggleNav() {
-    this.isNavOpen = !this.isNavOpen;
+  toggleMenu(): void {
+    this.menuActive = !this.menuActive;
+  }
+  
+  closeMenu(): void {
+    this.menuActive = false; // Ensure the menu is closed
   }
 
   @HostListener('window:scroll', [])
   onWindowScroll(): void {
-
-    console.log('Scroll event detected:', window.scrollY);
-
     this.isScrolled = window.scrollY > 0;
   }
 
