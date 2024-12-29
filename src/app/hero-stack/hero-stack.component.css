@@ -112,7 +112,7 @@ body, html {
   }
   
   .btn.secondary:hover {
-    background: #000d47;
-    color: #ffffff;
+    background: white;
+    color: #000000;
   }
   

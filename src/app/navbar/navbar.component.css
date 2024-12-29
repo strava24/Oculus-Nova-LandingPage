@@ -63,10 +63,10 @@ header.scrolled nav.navbar {
     line-height: 150%; /* 22.5px */
     }
 
-.nav-links a.contact-us {
+/* .nav-links a.contact-us {
     border: 1px solid white;
     border-radius: 20px;
-}
+} */
 
 .nav-links a.go-to-app {
     background-color: white;
@@ -75,6 +75,7 @@ header.scrolled nav.navbar {
 }
 
 .nav-links a:hover {
+    cursor: pointer;
     background-color: #000d47;
     border-radius: 20px;
 }

@@ -10,7 +10,7 @@ import { LaunchingSsonPageComponent } from './launching-sson-page/launching-sson
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, HeroStackComponent, FeaturesComponent, PricingComponent, TeamComponent, FooterComponent, LaunchingSsonPageComponent],
+  imports: [NavbarComponent, HeroStackComponent, FeaturesComponent, PricingComponent, TeamComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
