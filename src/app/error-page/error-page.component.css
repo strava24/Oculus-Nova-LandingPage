@@ -1,0 +1,68 @@
+
+
+/* Launching Soon Section */
+.error-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    margin: 0 auto;
+    margin: 0;
+    font-family: Montserrat;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #0040ff, #020021);
+    }
+    
+    .content {
+    flex: 1;
+    max-width: 50%;
+    }
+    
+    .content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    }
+    
+    .description {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 1.6;
+    }
+    
+    .social {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+    }
+    
+    .social span {
+    font-size: 1rem;
+    font-weight: bold;
+    }
+    
+    .social hr {
+    flex: 1;
+    border: 0;
+    height: 1px;
+    background: #ffffff;
+    }
+    
+    .social .icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px; /* Adds spacing between icons */
+    }
+    
+    /* Logo Section */
+    .logo {
+    flex: 1;
+    text-align: center;
+    }
+    
+    .logo img {
+    max-width: 200px;
+    padding-left: 50px ;
+    }
+      
