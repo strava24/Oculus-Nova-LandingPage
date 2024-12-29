@@ -6,6 +6,7 @@
 }
 
 .footer-container {
+
   display: flex;
   justify-content: space-between;
   align-items: flex-start; /* Align sections to the top */

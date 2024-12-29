@@ -8,7 +8,7 @@ body, html {
   
   /* Hero Section */
   .hero {
-    margin-top: 80px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,7 +102,7 @@ body, html {
   }
   
   .btn.primary:hover {
-    background: #e0e0e0;
+    background: #d2d2d2;
   }
   
   .btn.secondary {
@@ -112,7 +112,7 @@ body, html {
   }
   
   .btn.secondary:hover {
-    background: rgb(0, 15, 148);
+    background: #000d47;
     color: #ffffff;
   }
   

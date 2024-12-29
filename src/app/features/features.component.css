@@ -4,7 +4,7 @@
   background: #020021;
   text-align: center;
   display: flex;
-  padding: 40px 60px;
+  padding: 80px 60px;
   flex-direction: column;
   align-items: center;
   gap: 40px;
@@ -215,6 +215,6 @@ line-height: 120%;
 }
 
 .cta-button:hover {
-  background: rgb(0, 15, 148);
+  background: #000d47;
   color: #ffffff;
 }

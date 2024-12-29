@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './hero-stack.component.css'
 })
 export class HeroStackComponent {
-
+  scrollToFooter() {
+    const element = document.getElementById('footer');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
