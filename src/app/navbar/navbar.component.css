@@ -5,19 +5,19 @@
     padding: 0px 32px;
     justify-content: space-between; /* Space out logo and links */
     align-items: center; /* Vertically center content */
-    background-color: #060012;
+    background-color: #003b88;
 }
 
 /* header.scrolled {
-    opacity: 0.8;
-}
+     opacity: 0.8; 
+} */
 
 header nav.navbar {
     transition: color 0.4s ease-in-out;
 }
 
 header.scrolled nav.navbar {
-    background-color: #0B0121;} /* Change background color on scroll */
+    background-color: #0B0121;} /* Change background color on scroll
 
 
 /* Logo Styling */
@@ -103,7 +103,7 @@ header.scrolled nav.navbar {
     .nav-links {
         display: flex;
         flex-direction: column;
-        background-color: #060012; /* Adjusted color */
+        background-color: #0B0121; /* Adjusted color */
         position: absolute;
         top: 80px;
         right: 0;

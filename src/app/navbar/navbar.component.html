@@ -2,20 +2,20 @@
 
 <body>
 
-    <header >
+    <header [class.scrolled]="isScrolled">
         <nav class="navbar fixed-top">
             <a href="#" (click)="closeMenu()">
                 <img src="Images/Logo Words Only.png" class="logo" alt="Logo">
             </a>
-            
+
             <ul class="nav-links" [class.active]="menuActive">
                 <li><a (click)="scrollToFeatures()" (click)="closeMenu()">Features</a></li>
                 <li><a (click)="scrollToPricing()" (click)="closeMenu()">Pricing</a></li>
                 <li><a (click)="scrollToTeam()" (click)="closeMenu()">About Us</a></li>
                 <li><a (click)="scrollToFooter()" class="contact-us" (click)="closeMenu()">Contact Us</a></li>
-                <li><a href="#goToApp" class="go-to-app" (click)="closeMenu()">Go to app</a></li>
+                <!-- <li><a href="#goToApp" class="go-to-app" (click)="closeMenu()">Go to app</a></li> -->
             </ul>
-            <div class="burger" [class.active]="menuActive"  (click)="toggleMenu()">
+            <div class="burger" [class.active]="menuActive" (click)="toggleMenu()">
                 <div></div>
                 <div></div>
                 <div></div>

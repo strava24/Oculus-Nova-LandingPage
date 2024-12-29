@@ -12,9 +12,10 @@ export class NavbarComponent {
   menuActive: boolean = false;
 
   toggleMenu(): void {
+    this.isScrolled = true; // Ensure the menu is closed
     this.menuActive = !this.menuActive;
   }
-  
+
   closeMenu(): void {
     this.menuActive = false; // Ensure the menu is closed
   }

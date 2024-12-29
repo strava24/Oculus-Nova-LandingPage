@@ -1,13 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener, inject } from '@angular/core';
-import { ScreenCalibrationService } from '../../service/screen-calibration/screen-calibration.service';
 import { Router } from '@angular/router';
-import {LearnMoreComponent} from '../learn-more/learn-more.component';
+import { ScreenCalibrationService } from '../service/screen-calibration.service';
 
 @Component({
   selector: 'app-calibration',
   standalone: true,
-  imports: [CommonModule, LearnMoreComponent],
+  imports: [CommonModule],
   templateUrl: './calibration.component.html',
   styleUrl: './calibration.component.css'
 })

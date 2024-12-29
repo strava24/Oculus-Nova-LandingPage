@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-features',
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './features.component.css'
 })
 export class FeaturesComponent {
+
+  router = inject(Router);
+
+  startTest() {
+    this.router.navigate(['/test']);
+  }
 
 }

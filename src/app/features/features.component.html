@@ -3,59 +3,70 @@
 <div class="features-container">
   <!-- <div class="smoke-effect">
     <svg xmlns="http://www.w3.org/2000/svg" width="260" height="190" viewBox="0 0 260 190" fill="none">
-      <path d="M164.756 0.365234H95.2445C42.9186 0.365234 0.5 42.7863 0.5 95.1152C0.5 147.444 42.9186 189.865 95.2445 189.865H164.756C217.081 189.865 259.5 147.444 259.5 95.1152C259.5 42.7863 217.081 0.365234 164.756 0.365234Z" fill="url(#paint0_linear_1_20)"/>
+      <path
+        d="M164.756 0.365234H95.2445C42.9186 0.365234 0.5 42.7863 0.5 95.1152C0.5 147.444 42.9186 189.865 95.2445 189.865H164.756C217.081 189.865 259.5 147.444 259.5 95.1152C259.5 42.7863 217.081 0.365234 164.756 0.365234Z"
+        fill="url(#paint0_linear_1_20)" />
       <defs>
-        <linearGradient id="paint0_linear_1_20" x1="0.5" y1="0.365234" x2="181.112" y2="247.218" gradientUnits="userSpaceOnUse">
-          <stop offset="0.0520833" stop-color="#2200FA"/>
-          <stop offset="0.859375" stop-color="#0034FF"/>
+        <linearGradient id="paint0_linear_1_20" x1="0.5" y1="0.365234" x2="181.112" y2="247.218"
+          gradientUnits="userSpaceOnUse">
+          <stop offset="0.0520833" stop-color="#2200FA" />
+          <stop offset="0.859375" stop-color="#0034FF" />
         </linearGradient>
       </defs>
     </svg>
   </div> -->
-    <h1 class="features-title">Features that Oculus Nova provides</h1>
-    <p class="features-description">
-      We're dedicated to making vision therapy engaging, effective, and fun because every child deserves the best care for a brighter, clearer future.
-    </p>
-  
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="icon logmar-icon"></div>
-        <img class="feature-icons" src="Icons/logMar Icon.png" alt="logMar Icon">
-        <h2 class="feature-card-title">logMAR</h2>
-        <p>
-          Oculus Nova incorporates the logMAR (Logarithm of the Minimum Angle of Resolution) scale to measure visual acuity with precision. 
-          By quantifying the smallest detail a child can resolve, it provides accurate, logarithmic scoring to track progress effectively, ensuring optimal results in therapy.
-        </p>
-        <a href="#LogMarPage" class="cta-link">Test Your Visual Acuity</a>
-      </div>
-      <div class="feature-card">
-        <div class="icon gaze-tracking-icon"></div>
-        <img class="feature-icons" src="Icons/Gaze Tracking Icon.png" alt="Gaze Tracking Icon">
-        <h2 class="feature-card-title">Gaze Tracking</h2>
-        <p>
-          The gaze-tracking feature in Oculus Nova monitors eye movements in real-time, enabling precise interaction with games and exercises. 
-          It personalizes therapy by adapting to the user’s focus and alignment, ensuring effective and engaging vision improvement.
-        </p>
-      </div>
-      <div class="feature-card">
-        <div class="icon games-icon"></div>
-        <img class="feature-icons" src="Icons/3D Icon.png" alt="3D Glasses Icon">
-        <h2 class="feature-card-title">Multi-Layered Games</h2>
-        <p>
-          Oculus Nova offers multi-layered games designed to enhance visual acuity and coordination. These games progress in difficulty, 
-          targeting specific visual skills like focus, eye alignment, and depth perception, making therapy engaging and effective for children.
-        </p>
-      </div>
-    </div>
-  
-    <div class="analytics-section">
-      <h2>
-        Oculus Nova’s advanced analytics deliver meaningful insights to track progress and optimize therapy outcomes
-      </h2>
+  <h1 class="features-title">Features that Oculus Nova provides</h1>
+  <p class="features-description">
+    We're dedicated to making vision therapy engaging, effective, and fun because every child deserves the best care for
+    a brighter, clearer future.
+  </p>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="icon logmar-icon"></div>
+      <img class="feature-icons" src="Icons/logMar Icon.png" alt="logMar Icon">
+      <h2 class="feature-card-title">logMAR</h2>
       <p>
-        Unlock the potential of vision therapy with Oculus Nova's cutting-edge platform. Gain instant insights through our intuitive analytics dashboard, and keep children motivated with engaging, gamified exercises that make progress fun and rewarding.
+        Oculus Nova incorporates the logMAR (Logarithm of the Minimum Angle of Resolution) scale to measure visual
+        acuity with precision.
+        By quantifying the smallest detail a child can resolve, it provides accurate, logarithmic scoring to track
+        progress effectively, ensuring optimal results in therapy.
       </p>
-      <a href="#" class="cta-button">Go to app</a>
+      <a href="test" class="cta-link" (click)="startTest()">Test Your Visual Acuity</a>
+    </div>
+    <div class="feature-card">
+      <div class="icon gaze-tracking-icon"></div>
+      <img class="feature-icons" src="Icons/Gaze Tracking Icon.png" alt="Gaze Tracking Icon">
+      <h2 class="feature-card-title">Gaze Tracking</h2>
+      <p>
+        The gaze-tracking feature in Oculus Nova monitors eye movements in real-time, enabling precise interaction with
+        games and exercises.
+        It personalizes therapy by adapting to the user’s focus and alignment, ensuring effective and engaging vision
+        improvement.
+      </p>
+    </div>
+    <div class="feature-card">
+      <div class="icon games-icon"></div>
+      <img class="feature-icons" src="Icons/3D Icon.png" alt="3D Glasses Icon">
+      <h2 class="feature-card-title">Multi-Layered Games</h2>
+      <p>
+        Oculus Nova offers multi-layered games designed to enhance visual acuity and coordination. These games progress
+        in difficulty,
+        targeting specific visual skills like focus, eye alignment, and depth perception, making therapy engaging and
+        effective for children.
+      </p>
     </div>
   </div>
-  
+
+  <div class="analytics-section">
+    <h2>
+      Oculus Nova’s advanced analytics deliver meaningful insights to track progress and optimize therapy outcomes
+    </h2>
+    <p>
+      Unlock the potential of vision therapy with Oculus Nova's cutting-edge platform. Gain instant insights through our
+      intuitive analytics dashboard, and keep children motivated with engaging, gamified exercises that make progress
+      fun and rewarding.
+    </p>
+    <!-- <a href="#" class="cta-button">Go to app</a> -->
+  </div>
+</div>
