@@ -10,7 +10,45 @@
         Coming soon to redefine how they see the world.
     </p>
     <div class="button-container">
-        <button class="btn primary" href="#underDevelopmentScreen">Go to app</button>
+        <button class="btn primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Go to app</button>
+
         <button class="btn secondary" (click)="scrollToFooter()">Contact us</button>
+
+        <!-- Modal for Go To App -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="container">
+
+                            <h5><b>Launching Soon!</b></h5>
+
+                            <p class="description">
+                                Vision therapy doesn’t have to feel like a chore. We created Oculus Nova to ensure that
+                                treatment is engaging, effective, and tailored to your child’s unique needs. We can’t
+                                wait
+                                to help you transform therapy with Oculus Nova!
+                            </p>
+
+                            <!-- <div class="img-fluid">
+                                <img src="Images/Logo Icon with Words.png" alt="Oculus Nova Logo">
+                            </div> -->
+
+                        </div>
+
+                        <div class="row">
+                            <div class="logo-container img-fluid">
+                                <img src="Images/Logo Icon with Words.png" alt="Oculus Nova Logo">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
