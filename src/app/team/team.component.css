@@ -41,7 +41,7 @@
 .team-members {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Two rows with three names per row */
-  gap: 30px;
+  gap: 40px 150px;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -57,3 +57,26 @@
   font-feature-settings: 'liga' off, 'clig' off;
   font-family: Montserrat;
 }
+
+/*Change padding for mobile phones*/
+@media (max-width: 768px) {
+  .team-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two rows with three names per row */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .team-members p {
+    margin: 0;
+    padding: 5px 15px;
+    background-color: #333;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+  }
+} 
