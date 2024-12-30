@@ -130,7 +130,9 @@ line-height: 150%; /* 22.5px */
 }
 .row img {
   max-width: 125px;
+  padding-bottom: 10px;
 }
+
 
 @media (max-width: 768px) {
   /* Logo Styling */
