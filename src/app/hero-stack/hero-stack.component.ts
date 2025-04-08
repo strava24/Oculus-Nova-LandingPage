@@ -15,7 +15,7 @@ export class HeroStackComponent {
   }
 
   toApp() {
-    window.open('https://oculus-nova-130574953929.asia-south1.run.app/', '_blank');
+    window.open('https://www.oculus-nova.com/', '_blank');
   }
 
 }
